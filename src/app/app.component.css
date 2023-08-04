@@ -1,0 +1,46 @@
+img {
+  width: 50%;
+  position: relative;
+  top: .7rem;
+}
+
+.pt-5 {
+  padding-top: 0 !important;
+}
+
+@media (max-width:450px) {
+
+  .row>* {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  img {
+    width: 70%;
+    position: relative;
+    top: .6rem;
+  }
+
+  .input-group {
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    align-content: space-around;
+    justify-content: center;
+  }
+
+  .input-group>.form-control,
+  .input-group>.form-floating,
+  .input-group>.form-select {
+    position: relative;
+    flex: 1 1 auto;
+    width: 100%;
+    min-width: 0;
+    margin-bottom: 1rem;
+  }
+}
